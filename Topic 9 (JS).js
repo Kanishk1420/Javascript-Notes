@@ -1,4 +1,4 @@
-//                                Topic 8:- Async Awaits Callbacks & Promises
+//                                Topic 9:- Async Awaits Callbacks & Promises
 
 // async await >> promise >> callback hell
 // Synchronous Code:- The code execute in particular execute of instructions given in the program.
