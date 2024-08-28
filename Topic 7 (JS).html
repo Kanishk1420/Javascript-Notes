@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topic 7 :- Event Handling</title>
+    <style>
+      .u {
+        width: 10vh;
+        height: 10vh;
+        background-color: rgb(12, 88, 218);
+        color: white;
+        border: 1px solid black;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+      }
+      #i {
+        width: 10vh;
+        height: 10vh;
+        background-color: rgb(12, 218, 36);
+        color: rgb(255, 0, 0);
+        border: 1px solid black;
+        margin-top: 2vh;
+      }
+      #ie {
+        width: 12vh;
+        height: 12vh;
+        background-color: rgb(231, 14, 50);
+        color: rgb(21, 20, 20);
+        border: 1px solid black;
+        margin-top: 2vh;
+      }
+      #button {
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
+      .fa-bars{
+    font-size: 25px;
+    cursor: pointer;
+    color: rgba(0, 4, 251, 0.989);
+    position: relative;
+    z-index: 100;
+  }
+  .di {
+    transform: translateX(-173px);
+    margin-left: -1px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+  }
+
+  ul {
+    margin-top: -36px;
+    margin-left: -6px;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    width: 125px;
+    height: 420px;
+    border: 2px solid rgba(0, 4, 251, 0.989);
+    border-radius: 10px;
+    background-color: rgb(0, 255, 255);
+  }
+
+  li {
+    padding-top: 42px;
+    margin-left: -21px;
+    list-style: none;
+    font-size: 20px;
+  }
+
+  li:hover {
+    text-decoration: underline;
+  }
+  .byn {
+        background-color: #ff0000;
+        color: #000000;
+        border: 1px solid rgb(255, 0, 0);
+        border-radius: 12px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
+      p {
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <button onclick="console.log(2); alert('hello');">Dont Click Me!</button>
+    <button ondblclick="console.log('This is called dbclick');">
+      Click 2 times!
+    </button>
+    <div class="u" onmouseover="console.log('hovering');">This is box</div>
+    <button id="id">Clickk me</button>
+    <div id="i">Hover me!</div>
+    <div id="ie">Hover me Object!</div>
+    <h3>Event Listeners</h3>
+    <button id="uix">Hover me!</button>
+    <button id="button">Dark-mode!</button>
+    <nav>
+      <i class="fas fa-bars"></i>
+      <div class="di">
+          <ul>
+              <li>Login</li>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Address</li>
+              <li>Shop</li>
+          </ul>
+      </div>
+  </nav>
+  <button class="byn">Click me!</button> 
+  <p></p>
+    <script src="./Topic 7 (JS).js"></script>
+  </body>
+</html>
