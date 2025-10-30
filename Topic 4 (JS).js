@@ -62,11 +62,22 @@ for (const price of items) {
     let discount = price*40/100
     console.log(price-discount);
 }
+// sort method in array basically sorts the elements in the array in the lexicographical order, not alphabetical order.
+// lexographical = (alphabetical + numbers+ symbols) as strings
+
+let numbers = [5, 9, 1200, 400, 3000];
+numbers.sort();
+console.log("Normal format",numbers); // here the output will be [1200, 3000, 400, 5, 9] its sorted in lexographically order not in numerical order. to sort perfectly we need 
+numbers.sort((a,b)=>a-b); // for ascending order
+console.log("Ascending order",numbers);
+numbers.sort((a,b)=>b-a); //for descending order
+console.log("Descending order",numbers);
 
 //Arrays Methods in Js
 //push()    :- add to end
 //pop()     :- delete from end & return
 //toString() :- converts an array to string
+//parseint() :- converts the string onto the number
 
 let fooditems = ["potato","apple","litchi","tomato"];
 fooditems.push("chips","burger","panner");
